@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Cor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="game-container">
+  <h1 id="color-name"></h1>
+  <div class="options">
+    <button class="option" onclick="checkAnswer(this)"></button>
+    <button class="option" onclick="checkAnswer(this)"></button>
+    <button class="option" onclick="checkAnswer(this)"></button>
+    <button class="option" onclick="checkAnswer(this)"></button>
+  </div>
+  <p id="feedback"></p>
+  <div class="info">
+    <p>Tempo: <span id="time">120</span>s</p>
+    <p>Pontuação: <span id="score">0</span></p>
+  </div>
+  <button id="start-btn" class="btn" onclick="startGame()">Iniciar Jogo</button>
+  <button class="btn" onclick="restartGame()">Reiniciar Jogo</button>
+  <div id="history"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
